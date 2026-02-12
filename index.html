@@ -4,28 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polishetty Jhansi — Results-driven WordPress Developer & SEO Specialist</title>
+    <title>Polishetty Jhansi — Web and WordPress developer and SEO maintenance</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Portfolio of Polishetty Jhansi, a WordPress Developer specializing in website optimization, technical SEO, and responsive design. Based in Chennai.">
+        content="Portfolio of Polishetty Jhansi, a Web and WordPress developer specializing in SEO maintenance, website optimization, and responsive design. Based in Chennai.">
     <meta name="keywords"
-        content="WordPress Developer, SEO Specialist, Web Developer, Polishetty Jhansi, Chennai Developer, Website Optimization">
+        content="Web Developer, WordPress Developer, SEO maintenance, Polishetty Jhansi, Chennai Developer, Website Optimization">
     <meta name="author" content="Polishetty Jhansi">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jhansi-portfolio.vercel.app/">
-    <meta property="og:title" content="Polishetty Jhansi — WordPress Developer & SEO Specialist">
+    <meta property="og:title" content="Polishetty Jhansi — Web and WordPress developer and SEO maintenance">
     <meta property="og:description"
-        content="Results-driven WordPress Developer with expertise in website optimization, technical SEO, and responsive design.">
+        content="Results-driven Web and WordPress developer with expertise in SEO maintenance, website optimization, and responsive design.">
     <meta property="og:image" content="assets/images/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Polishetty Jhansi — WordPress Developer & SEO Specialist">
+    <meta property="twitter:title" content="Polishetty Jhansi — Web and WordPress developer and SEO maintenance">
     <meta property="twitter:description"
-        content="Results-driven WordPress Developer with expertise in website optimization, technical SEO, and responsive design.">
+        content="Results-driven Web and WordPress developer with expertise in SEO maintenance, website optimization, and responsive design.">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -108,11 +108,10 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <h1 class="hero-title fw-extra-bold mb-3">Polishetty Jhansi</h1>
-                        <p class="hero-tagline lead text-secondary mb-4">Results-driven WordPress Developer specializing
-                            in
-                            <span class="text-primary fw-semibold">website optimization</span>,
-                            <span class="text-primary fw-semibold">technical SEO</span>, and
-                            <span class="text-primary fw-semibold">responsive design</span>.
+                        <p class="hero-tagline lead text-secondary mb-4">Results-driven <span
+                                class="text-primary fw-semibold">Web and WordPress developer</span> and
+                            <span class="text-primary fw-semibold">SEO maintenance</span> specializing in website
+                            optimization and responsive design.
                         </p>
                         <div class="d-flex flex-wrap gap-3 mb-4">
                             <a href="#portfolio" class="btn btn-primary btn-lg shadow-sm">Explore My Work <i
@@ -322,7 +321,7 @@
                     <div class="col-md-6 mb-4">
                         <div class="skill-item">
                             <label class="d-flex justify-content-between mb-2">
-                                <span>WordPress Theme & Plugin Development</span>
+                                <span>Overall Web Maintenance</span>
                                 <span>100%</span>
                             </label>
                             <div class="progress">
@@ -714,8 +713,32 @@
                     modalTech.textContent = tech;
                 });
             }
+
+            // Back to Top Button Logic
+            const backToTop = document.getElementById('backToTop');
+            if (backToTop) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        backToTop.classList.add('show');
+                    } else {
+                        backToTop.classList.remove('show');
+                    }
+                });
+
+                backToTop.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
         });
     </script>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary rounded-circle shadow" title="Back to Top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 </body>
 
 </html>
